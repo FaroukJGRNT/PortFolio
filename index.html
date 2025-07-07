@@ -1,23 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-
+    <div class="navbar">
+        <p style="font-size: 20px; font-weight: bold; margin: 2%; margin-left: 4%; float: left;">Farouk Okanla</p>
+        <div class="navbar-btns">
+            <button class="btn-invisible" id="presentation-btn">Présentation</button>
+            <button class="btn-invisible" id="skills-btn">Compétences</button>
+            <button class="btn-invisible" id="realisations-btn">Réalisations</button>
+            <button class="btn-visible" id="contact-btn">Contactez-moi</button>
+        </div>
     </div>
 
-
-    <div class="body">
-
+    <div id="cover">
+        <div id="cover-text">
+            <h2 style="text-align: left;">FAROUK OKANLA</h2>
+            <h4 style="text-align: left;">Étudiant en expertise informatique<br>Passionné de développement web et de jeux vidéo</h4>
+        </div>
+        <img src="rsc/pro-pic1.png" alt="Farouk Okanla - Photo professionnelle" style="margin: auto; z-index: -1; margin-right: 10%;">
     </div>
 
+    <p style="text-align: center; margin-bottom: 0%; padding-bottom: 0;">Découvrez qui je suis et<br> ce dont je suis capable</p>
+    <img src="rsc/arrow.png" alt="down-arrow" style="display: block; margin: auto;">
 
-    <div class="footer">
-        
+    <div id="presentation" class="container">
+        <div id="presentation-text">
+            <h2>PRÉSENTATION</h2>
+            <h3>Je suis Farouk OKANLA.<br><br>Actuellement étudiant en 3ᵉ<br> année d'expertise<br> informatique.</h3>
+        </div>
+        <div id="presentation-content">
+            <p>
+                Je me spécialise dans le développement web full<br> stack, mais aussi dans la conception de jeux vidéo.<br>
+                J'aime résoudre des problèmes et construire de<br>belles choses, que ce soient des applications<br>
+                ou bien des jeux vidéo.
+            </p>
+            <div id="images">
+                <img src="rsc/game-dev.jpg" alt="Développement de jeux vidéo" class="illustration">
+                <img src="rsc/web-dev.jpg" alt="Développement web" class="illustration">
+            </div>
+            <p>Je suis constamment à la recherche de<br> nouvelles expériences pour<br> affûter mes compétences.</p>
+        </div>
     </div>
+
+    <div id="skillset" class="container">
+        <h2>COMPÉTENCES</h2>
+        <div id="skillset-content">
+            <div id="tech-skills">
+                <h5>MES COMPÉTENCES<br>TECHNIQUES</h5>
+                <h3>HTML, CSS, JS, Python, Express,<br> Django, C, C++, Haskell.<br>Beaucoup d'expérience<br> également avec Git.</h3>
+            </div>
+            <div style="width: 2px; height: 250px; background-color: gray;"></div>
+            <div id="soft-skills">
+                <h5>MES SOFT SKILLS</h5>
+                <h3>Leadership, travail en équipe,<br> organisation, autonomie,<br> polyvalence.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="realisations-web" class="container2">
+        <h2>MES RÉALISATIONS<h4>en développement web</h4></h2>
+
+        <div class="right-project-container">
+            <img src="rsc/epytodo.png" alt="">
+            <div class="right-project-text">
+                <h3>APPLICATION GESTION DE TÂCHES</h3>
+                <p>Une simple application permettant d’ajouter et de suivre des tâches.<br>
+                Elle fonctionne à l’aide d’une API CRUD basée sur Express.js,<br>
+                connectée à une base de données MySQL.<br>
+                Front end réalisé avec du pur HTML, CSS et JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="left-project-container">
+            <img src="rsc/inspire.png" alt="">
+            <div class="left-project-text">
+                <h3>INSPIRE</h3>
+                <p>Une plateforme de blogs où chacun peut partager ses idées.<br>
+                Discutez avec des passionnés et trouvez de l'inspiration.<br>
+                Back end conçu avec Django, front end réalisé en HTML et CSS.</p>
+            </div>
+        </div>
+
+        <div class="right-project-container">
+            <img src="rsc/medom-app.png" alt="">
+            <div class="right-project-text">
+                <h3>APPLICATION DE GESTION ADMINISTRATIVE</h3>
+                <p>Cette application, conçue pour l’entreprise MEDOM-BENIN,<br>
+                permet à chaque employé de renseigner des informations<br> et d’accomplir des tâches,<br>
+                facilitant ainsi le bon fonctionnement de l’entreprise.<br>
+                Back end réalisé avec Django, front end avec <br>HTML et Bootstrap CSS.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="realisations-game" class="container2">
+        <h2>MES RÉALISATIONS<h4>en game dev</h4></h2>
+
+        <div class="right-project-container">
+            <img src="rsc/web-dev.jpg" alt="">
+            <div class="right-project-text">
+                <h3>GLUTTONY</h3>
+                <p>Un RPG de dark fantasy codé en CSFML (portage C de SFML).<br>
+                Explorez un monde sombre en top-down 2D<br>
+                en résolvant les mystères d’un village ravagé par le cannibalisme.</p>
+            </div>
+        </div>
+
+        <div class="left-project-container">
+            <img src="rsc/space-shooter.png" alt="">
+            <div class="left-project-text">
+                <h3>SPACE SHOOTER</h3>
+                <p>Un jeu d’arcade réalisé avec Godot.<br>
+                Contrôlez un vaisseau spatial et évitez les astéroïdes.<br>
+                Faites de votre mieux pour obtenir le meilleur score !</p>
+            </div>
+        </div>
+
+        <div class="right-project-container">
+            <img src="rsc/beat-the-clock.png" alt="">
+            <div class="right-project-text">
+                <h3>BEAT THE CLOCK</h3>
+                <p>Vous vous réveillez dans un donjon sans souvenirs.<br>
+                Vous avez 60 secondes pour trouver et battre le boss.<br>
+                Un roguelike réalisé sur le moteur de jeu Godot.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h2>CONTACTEZ-MOI</h2>
+        <div id="footer-content">
+            <img src="rsc/pro-pic1.png" alt="Farouk Okanla - Photo professionnelle" style="height:450px;">
+            <div id="footer-text">
+                <h3>QUE NOS COLLABORATIONS SOIENT<br>FRUCTUEUSES !</h3>
+                <p><span style="color: aquamarine;">Téléphone :</span> +229 01 53 83 86 76</p>
+                <p><span style="color: aquamarine;">Adresse mail :</span> farouk.okanla@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
